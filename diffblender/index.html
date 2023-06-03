@@ -25,16 +25,16 @@
 
 
   <title>DiffBlender: Scalable and Composable Multimodal Text-to-Image Diffusion Models</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" href="./static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+        rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -53,32 +53,33 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">DiffBlender: Scalable and Composable</h1>
-            <h1 class="title is-2 publication-title">Multimodal Text-to-Image Diffusion Models</h1>
-            <div class="is-size-5 publication-authors">
+            <h1 class="title is-1 publication-title">Multimodal Text-to-Image Diffusion Models</h1>
+            <!-- <div class="is-size-5 publication-authors"> -->
+            <div class="is-size-5">
               <!-- Paper authors -->
               <span class="author-block">
-                  <a href="https://bit.ly/sungnyunkim" style="color:#f68946;font-weight:normal;">Sungnyun Kim</a><sup>*<span>&#8224;</span></sup>,</span>
+                  <a href="https://bit.ly/sungnyunkim" style="color:#f68946;font-weight:normal;">Sungnyun Kim<sup>*<span>&#8224;</span></sup></a>,</span>
                 <span class="author-block">
-                  <a href="https://ssuhan.github.io" style="color:#F2A900;font-weight:normal;">Junsoo Lee</a><sup><span>&#8224;</span></sup>,</span>
+                  <a href="https://ssuhan.github.io" style="color:#F2A900;font-weight:normal;">Junsoo Lee<sup><span>&#8224;</span></sup></a>,</span>
                   <span class="author-block">
-                      <a href="https://github.com/Kibeom-Hong" style="color:#008AD7;font-weight:normal;">Kibeom Hong</a><sup>*</sup>,</span>
+                      <a href="https://github.com/Kibeom-Hong" style="color:#008AD7;font-weight:normal;">Kibeom Hong<sup>*</sup></a>,</span>
                     <span class="author-block">
                       <a href="https://scholar.google.com/citations?user=YUcWWbEAAAAJ&hl=en" style="color:#F2A900;font-weight:normal;">Daesik Kim</a>,</span>
                     <span class="author-block">
-                      <a href="https://nmhkahn.github.io" style="color:#F2A900;font-weight:normal;">Namhyuk Ahn</a><sup><span>&#8225;</span></sup>
+                      <a href="https://nmhkahn.github.io" style="color:#F2A900;font-weight:normal;">Namhyuk Ahn<sup><span>&#8225;</span></sup></a>
                     </span>
 
                   </div>
 
                   <br>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> KAIST AI; </span>
-                    <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> NAVER WEBTOON AI; </span>
-                    <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Yonsei University; </span>
+                    <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> KAIST AI; &nbsp;&nbsp;</span>
+                    <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> NAVER WEBTOON AI; &nbsp;&nbsp;</span>
+                    <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Yonsei University </span>
                   <br>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Work done while interning at NAVER WEBTOON AI</small></span>
-                    <span class="eql-cntrb"><small><br><sup><span>&#8224;</span></sup>Equal contribution</small></span>
-                    <span class="eql-cntrb"><small><br><sup><span>&#8225;</span></sup>Corresponding author</small></span>
+                    <span class="eql-cntrb"><small><sup>*</sup>Work done while interning at NAVER WEBTOON AI &nbsp;</small></span>
+                    <span class="eql-cntrb"><small><sup><span>&#8224;</span></sup>Equal contribution &nbsp;</small></span>
+                    <span class="eql-cntrb"><small><sup><span>&#8225;</span></sup>Corresponding author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -168,7 +169,7 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -197,7 +198,8 @@
 </section>
 <!-- End paper abstract -->
 
-<section class="hero is-small">
+
+<section class="section is-small" style="background-color:#fff9e6">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-five-fifths">
@@ -210,15 +212,15 @@
         <div class="content has-text-justified">
           <ul>
             <li>We design DiffBlender to facilitate the convenient addition of different modalities by categorizing them into three types: image-form, spatial tokens, and non-spatial tokens.</li>
-            <li>It is intuitively extended to additional modalities while achieving a low training cost through a partial update of hypernetworks.</li>
+            <li>It is designed to intuitively extend to additional modalities while achieving a low training cost through a partial update of hypernetworks.</li>
           </ul>
         </div>        
         <img id="model" width="100%" src="assets/fig3.png">
-        <h3 class="subtitle has-text-centered">
+        <h3 class="subtitle has-text-justified">
           <p style="font-family:Times New Roman"><b>Figure 2. Overview of DiffBlender architecture. 
               (a) illustrates the four types of conditions employed in DiffBlender and indicates where each part of information is used in the UNet layers. 
               (b) focuses on the purple region in (a) to provide details of the DiffBlender's conditioning process. 
-              The lock-marked layers represent being fixed as the original parameters of SD. i
+              The lock-marked layers represent being fixed as the original parameters of SD.
               The remaining modules, small hypernetworks, denote the learnable parameters of DiffBlender.</b></p>
         </h3>   
 
@@ -228,8 +230,8 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
+<section class="section is-small">
+  <!-- <div class="hero-body"> -->
     <div class="container">
         <div class="columns is-centered has-text-centered">
           <div class="column is-five-fifths">
@@ -238,10 +240,10 @@
         </div>
 
       <div class="columns is-centered">
-        <div class="column is-full-width">
+        <div class="column is-six-fifths">
           <h2 class="title is-4"><font color="#545454">Versatile applications of DiffBlender</font></h2>
           <img id="result" width="100%" src="assets/fig2.png">
-          <h2 class="subtitle has-text-centered">
+          <h2 class="subtitle has-text-justified">
             <p style="font-family:Times New Roman">
              DiffBlender enables flexible manipulation of conditions, providing the customized generation aligned with user preferences. 
              Note that all results are generated by our single model at once, not in sequence.
@@ -251,192 +253,216 @@
       </div>
 
 
-    <h2 class="title is-4"><font color="#545454">Reference-guided and semantic-preserved generation</font></h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig6.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image.
-            </p>
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig11-1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image.
-            </p>
-        </h2>      
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig11-2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image.
-            </p>
-        </h2>      
-     </div>
+
+  <div class="columns is-centered">
+    <div class="column is-six-fifths">
+        <h2 class="title is-4"><font color="#545454">Reference-guided and semantic-preserved generation</font></h2>
+          <div id="results-carousel" class="carousel results-carousel">
+           <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig6.png" alt="MY ALT TEXT"/>
+              <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image.
+                </p>
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig11-1.png" alt="MY ALT TEXT"/>
+              <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                <!-- When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image. -->
+                </p>
+            </h2>      
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig11-2.png" alt="MY ALT TEXT"/>
+              <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                <!-- When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image. -->
+                </p>
+            </h2>      
+             </div>
+          </div>
+    </div>
   </div>
 
 
-    <h2 class="title is-4"><font color="#545454">Object reconfiguration</font></h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig7.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            DiffBlender has the capability to flexibly reconstruct a new scene by utilizing partial information from an input image. 
-            This enables us to customize scenes while retaining the contextual cues and layout from the original image.
-            </p>
-        </h2>
+  <div class="columns is-centered">
+    <div class="column is-six-fifths">
+        <h2 class="title is-4"><font color="#545454">Object reconfiguration</font></h2>
+          <div id="results-carousel" class="carousel results-carousel">
+           <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig7.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                DiffBlender has the capability to flexibly reconstruct a new scene by utilizing partial information from an input image. 
+                This enables us to customize scenes while retaining the contextual cues and layout from the original image.
+                </p>
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig16.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                By altering the reference images associated with the clothing, it can reconfigure the scenes, modifying the outfit and style of the violinist.
+                </p>
+            </h2>      
+          </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig16.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Object reconfiguration for clothes. 
-            By altering the reference images associated with the clothing, it can reconfigure the scenes, modifying the outfit and style of the violinist.
-            </p>
-        </h2>      
-      </div>
+    </div>
   </div>
 
 
-    <h2 class="title is-4"><font color="#545454">Mode-specific guidance</font></h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig9.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Each row depicts the results of style and sketch guidance, respectively. 
-            We linearly manipulate the mode-specific guidance scale, where the center indicates scale=0 (original guidance).
-            </p>
-        </h2>
+
+  <div class="columns is-centered">
+    <div class="column is-six-fifths">
+        <h2 class="title is-4"><font color="#545454">Mode-specific guidance</font></h2>
+          <div id="results-carousel" class="carousel results-carousel">
+           <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig9.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                Each row depicts the results of style and sketch guidance, respectively. 
+                We linearly manipulate the mode-specific guidance scale, where the center indicates scale=0 (original guidance).
+                </p>
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig13-1.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Sketch guidances.
+                </p>
+            </h2>      
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig13-2.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Depth guidances.
+                </p>
+            </h2>      
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig13-3.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Color and style guidances.
+                </p>
+            </h2>      
+          </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig13-1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Sketch guidances.
-            </p>
-        </h2>      
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig13-2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Depth guidances.
-            </p>
-        </h2>      
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig13-3.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Color and style guidances.
-            </p>
-        </h2>      
-      </div>
+    </div>
   </div>
 
 
-    <h2 class="title is-4"><font color="#545454">Interpolating non-spatial conditions.</font></h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig10.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Interpolating latents for the color palettes and reference image embeddings.
-            </p>
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig14-1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Interpolating latents for the color palettes.
-            </p>
-        </h2>      
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig14-2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Interpolating latents for the color palettes.
-            </p>
-        </h2>      
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig15-1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Interpolating latents for the reference image embeddings.
-            </p>
-        </h2>      
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig15-2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            Interpolating latents for the reference image embeddings.
-            </p>
-        </h2>      
-      </div>
-  </div>
 
-    <h2 class="title is-4"><font color="#545454">Manipulating spatial conditions</font></h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig12-1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            The box grounded with sun is shifted from the upper left to the upper right in a counter-clockwise direction. 
-            Throughout this shift, the partial sketch and reference image are consistently reflected, although there are slight variations in the terrain, brightness, or contrast, depending on the sun's position.
-            </p>
-        </h2>
+  <div class="columns is-centered">
+    <div class="column is-six-fifths">
+        <h2 class="title is-4"><font color="#545454">Interpolating non-spatial conditions.</font></h2>
+          <div id="results-carousel" class="carousel results-carousel">
+           <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig10.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Interpolating latents for the color palettes and reference image embeddings.
+                </p>
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig14-1.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Interpolating latents for the color palettes.
+                </p>
+            </h2>      
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig14-2.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Interpolating latents for the color palettes.
+                </p>
+            </h2>      
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig15-1.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Interpolating latents for the reference image embeddings.
+                </p>
+            </h2>      
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig15-2.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                Interpolating latents for the reference image embeddings.
+                </p>
+            </h2>      
+          </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="assets/fig12-2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-            <p style="font-family:Times New Roman">
-            The astronaut's arms are gradually elevated, with the sketch and style being maintained.
-            </p>
-        </h2>      
-      </div>
+    </div>
   </div>
 
 
-</div>
+
+  <div class="columns is-centered">
+    <div class="column is-six-fifths">
+        <h2 class="title is-4"><font color="#545454">Manipulating spatial conditions</font></h2>
+          <div id="results-carousel" class="carousel results-carousel">
+           <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig12-1.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-justified">
+                <p style="font-family:Times New Roman">
+                The box grounded with sun is shifted from the upper left to the upper right in a counter-clockwise direction. 
+                Throughout this shift, the partial sketch and reference image are consistently reflected, although there are slight variations in the terrain, brightness, or contrast, depending on the sun's position.
+                </p>
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="assets/fig12-2.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+                <p style="font-family:Times New Roman">
+                The astronaut's arms are gradually elevated, with the sketch and style being maintained.
+                </p>
+            </h2>      
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- </div> -->
 </div>
 </section>
 <!-- End image carousel -->
 
 
 
-<section class="hero is-small" style="backgroud-color:#fff9e6">
+<section class="section is-small is-light" style="backgroud-color:#fff9e6">
   <div class="columns is-centered has-text-centered">
       <div style="width:90%;">
 
         <!-- Abstract. -->
         <div style="float:left; width:47.1%; border: 0px solid black;">
-          <h2 class="title is-5">Functional difference over previous works</h2>
+          <h2 class="title is-4">Functional difference over previous works</h2>
           <div class="content has-text-justified">
            Table below summarizes the comparisons with previous multimodal T2I diffusion models. 
            The existing studies have limitations; supporting only a single modality at a time; 
@@ -456,7 +482,7 @@
         <!--/ Abstract. -->
 
         <div style="float:right; width:47.8%; border: 0px solid black;">
-          <h2 class="title is-5">Evaluation with baselines</h2>
+          <h2 class="title is-4">Evaluation with baselines</h2>
           <div class="content has-text-justified">
             We set new standards for multimodal generation by conducting quantitative (Table) and qualitative (Figure) comparisons with existing approaches.
           </div>  
