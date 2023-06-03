@@ -52,8 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DiffBlender: Scalable and Composable</h1>
-            <h1 class="title is-1 publication-title">Multimodal Text-to-Image Diffusion Models</h1>
+            <h1 class="title is-2 publication-title">DiffBlender: Scalable and Composable</h1>
+            <h1 class="title is-2 publication-title">Multimodal Text-to-Image Diffusion Models</h1>
             <!-- <div class="is-size-5 publication-authors"> -->
             <div class="is-size-5">
               <!-- Paper authors -->
@@ -73,8 +73,8 @@
 
                   <br>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> KAIST AI; &nbsp;&nbsp;</span>
-                    <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> NAVER WEBTOON AI; &nbsp;&nbsp;</span>
+                    <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> KAIST AI &nbsp;&nbsp;</span>
+                    <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> NAVER WEBTOON AI &nbsp;&nbsp;</span>
                     <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Yonsei University </span>
                   <br>
                     <span class="eql-cntrb"><small><sup>*</sup>Work done while interning at NAVER WEBTOON AI &nbsp;</small></span>
@@ -169,7 +169,7 @@
 
 
 <!-- Paper abstract -->
-<section class="section is-light">
+<section class="section" style="background-color:#f5f5f5">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -199,7 +199,7 @@
 <!-- End paper abstract -->
 
 
-<section class="section is-small" style="background-color:#fff9e6">
+<section class="section is-small" style="background-color:#FDF7F0">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-five-fifths">
@@ -223,7 +223,6 @@
               The lock-marked layers represent being fixed as the original parameters of SD.
               The remaining modules, small hypernetworks, denote the learnable parameters of DiffBlender.</b></p>
         </h3>   
-
     </div>
   </div>
 </section>
@@ -232,7 +231,7 @@
 <!-- Image carousel -->
 <section class="section is-small">
   <!-- <div class="hero-body"> -->
-    <div class="container">
+    <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-five-fifths">
           <h2 class="title is-3"> Multimodal Text-to-Image Generation </h2>
@@ -240,7 +239,7 @@
         </div>
 
       <div class="columns is-centered">
-        <div class="column is-six-fifths">
+        <div class="column is-full-width">
           <h2 class="title is-4"><font color="#545454">Versatile applications of DiffBlender</font></h2>
           <img id="result" width="100%" src="assets/fig2.png">
           <h2 class="subtitle has-text-justified">
@@ -254,44 +253,40 @@
 
 
 
-  <div class="columns is-centered">
-    <div class="column is-six-fifths">
-        <h2 class="title is-4"><font color="#545454">Reference-guided and semantic-preserved generation</font></h2>
-          <div id="results-carousel" class="carousel results-carousel">
-           <div class="item">
-            <!-- Your image here -->
-            <img src="assets/fig6.png" alt="MY ALT TEXT"/>
-              <h2 class="subtitle has-text-justified">
-                <p style="font-family:Times New Roman">
-                When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image.
-                </p>
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="assets/fig11-1.png" alt="MY ALT TEXT"/>
-              <h2 class="subtitle has-text-justified">
-                <p style="font-family:Times New Roman">
-                <!-- When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image. -->
-                </p>
-            </h2>      
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="assets/fig11-2.png" alt="MY ALT TEXT"/>
-              <h2 class="subtitle has-text-justified">
-                <p style="font-family:Times New Roman">
-                <!-- When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image. -->
-                </p>
-            </h2>      
-             </div>
-          </div>
-    </div>
-  </div>
+    <h2 class="title is-4"><font color="#545454">Reference-guided and semantic-preserved generation</font></h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="assets/fig6.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-justified">
+            <p style="font-family:Times New Roman">
+            When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image.
+            </p>
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="assets/fig11-1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-justified">
+            <p style="font-family:Times New Roman">
+            <!-- When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image. -->
+            </p>
+        </h2>      
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="assets/fig11-2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-justified">
+            <p style="font-family:Times New Roman">
+            <!-- When a source image is provided, DiffBlender demonstrates the results preserving the structure inherent in that image, while effectively incorporating the style elements from a reference image. -->
+            </p>
+        </h2>      
+         </div>
+      </div>
 
 
-  <div class="columns is-centered">
-    <div class="column is-six-fifths">
+  <!-- <div class="columns is-centered"> -->
+  <!--   <div class="column is-six-fifths"> -->
         <h2 class="title is-4"><font color="#545454">Object reconfiguration</font></h2>
           <div id="results-carousel" class="carousel results-carousel">
            <div class="item">
@@ -314,13 +309,13 @@
             </h2>      
           </div>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
 
 
-  <div class="columns is-centered">
-    <div class="column is-six-fifths">
+  <!-- <div class="columns is-centered"> -->
+  <!--   <div class="column is-six-fifths"> -->
         <h2 class="title is-4"><font color="#545454">Mode-specific guidance</font></h2>
           <div id="results-carousel" class="carousel results-carousel">
            <div class="item">
@@ -361,13 +356,13 @@
             </h2>      
           </div>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
 
 
-  <div class="columns is-centered">
-    <div class="column is-six-fifths">
+  <!-- <div class="columns is-centered"> -->
+  <!--   <div class="column is-six-fifths"> -->
         <h2 class="title is-4"><font color="#545454">Interpolating non-spatial conditions.</font></h2>
           <div id="results-carousel" class="carousel results-carousel">
            <div class="item">
@@ -416,18 +411,18 @@
             </h2>      
           </div>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
 
 
-  <div class="columns is-centered">
-    <div class="column is-six-fifths">
+  <!-- <div class="columns is-centered"> -->
+  <!--   <div class="column is-six-fifths"> -->
         <h2 class="title is-4"><font color="#545454">Manipulating spatial conditions</font></h2>
           <div id="results-carousel" class="carousel results-carousel">
            <div class="item">
             <!-- Your image here -->
-            <img src="assets/fig12-1.png" alt="MY ALT TEXT"/>
+            <img src="assets/fig12-1.png" width="80%" alt="MY ALT TEXT"/>
             <h2 class="subtitle has-text-justified">
                 <p style="font-family:Times New Roman">
                 The box grounded with sun is shifted from the upper left to the upper right in a counter-clockwise direction. 
@@ -437,7 +432,7 @@
           </div>
           <div class="item">
             <!-- Your image here -->
-            <img src="assets/fig12-2.png" alt="MY ALT TEXT"/>
+            <img src="assets/fig12-2.png" width="80%" alt="MY ALT TEXT"/>
             <h2 class="subtitle has-text-centered">
                 <p style="font-family:Times New Roman">
                 The astronaut's arms are gradually elevated, with the sketch and style being maintained.
@@ -445,8 +440,8 @@
             </h2>      
           </div>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
 
 <!-- </div> -->
@@ -456,7 +451,7 @@
 
 
 
-<section class="section is-small is-light" style="backgroud-color:#fff9e6">
+<section class="section is-small" style="background-color:#fff9e6">
   <div class="columns is-centered has-text-centered">
       <div style="width:90%;">
 
