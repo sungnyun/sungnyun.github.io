@@ -463,16 +463,15 @@
           <h2 class="title is-4">Functional difference over previous works</h2>
           <div class="content has-text-justified">
            Table below summarizes the comparisons with previous multimodal T2I diffusion models. 
-           The existing studies have limitations; supporting only a single modality at a time; 
-           supporting only similar types of modalities; 
-           supporting multiple modalities but being sensitive to hyperparameters when used together; 
-           or training models from scratch with a massive number of parameters without leveraging the existing knowledge.
-           We highlight that DiffBlender supports diverse input modalities, updates only partial parameters, and renders multimodal training, as well as extends to future conditioning modalities.
+           The existing studies have limitations: support only one type of modality,
+           involve training models with a substantial number of parameters,
+           or support multimodal inference but require expensive cost for training independent networks.
+           We highlight that DiffBlender supports various modality types, provides multimodal training, and selectively updates partial components, which facilitates the scaling-up of supporting modalities.
           </div>  
 
           <div class="column is-five-fifths">
               <div class="columns is-centered">
-                <img id="result" width="105%" src="assets/table1.pdf">
+                <img id="result" width="105%" src="assets/table1.png">
                 
               </div>
           </div>
@@ -482,7 +481,7 @@
         <div style="float:right; width:47.8%; border: 0px solid black;">
           <h2 class="title is-4">Evaluation with baselines</h2>
           <div class="content has-text-justified">
-            We set new standards for multimodal generation by conducting quantitative (Table) and qualitative (Figure) comparisons with existing approaches.
+            We set new standards for multimodal generation by conducting quantitative and qualitative comparisons with existing approaches.
           </div>  
 
           <div class="column is-five-fifths">
