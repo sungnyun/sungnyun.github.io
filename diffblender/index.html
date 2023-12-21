@@ -159,8 +159,8 @@
     <div class="hero-body">
       <img id="teaser" width="150%" src="assets/fig1.png">
       <h2 class="subtitle has-text-justified">
-          <p style="font-family:Times New Roman"><b>Figure 1. Generated results with multimodal conditions. 
-          By incorporating various input modalities, DiffBlender successfully synthesizes high-fidelity and diverse samples.</b></p>
+          <p style="font-family:Times New Roman"><b>Figure 1. Generated images with multimodal conditions. 
+            By incorporating various types of input modalities (1st row), DiffBlender successfully synthesizes high-fidelity and diverse samples, aligned with user preferences (2nd row).</b></p>
       </h2>
     </div>
   </div>
@@ -174,21 +174,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            The recent progress in <a href="https://github.com/CompVis/stable-diffusion">diffusion-based text-to-image generation models</a> has
-            significantly expanded generative capabilities via conditioning the text descriptions.
-            However, since relying solely on text prompts is still restrictive for fine-grained
-            customization, we aim to extend the boundaries of conditional generation to
-            incorporate diverse types of modalities, <i>e.g.</i>, sketch, box, and style embedding, 
-            simultaneously. We thus design a multimodal text-to-image diffusion model, coined as
-            <b>DiffBlender</b>, that achieves the aforementioned goal in a single model by training
-            only a few small <a href="https://github.com/lllyasviel/ControlNet">hypernetworks</a>. <b>DiffBlender facilitates a convenient scaling of
-            input modalities, without altering the parameters of an existing large-scale
-            generative model to retain its well-established knowledge.</b> Furthermore, our study sets
-            new standards for multimodal generation by conducting quantitative and qualitative
-            comparisons with existing approaches. By diversifying the channels of conditioning
-            modalities, DiffBlender faithfully reflects the provided information or, in its absence, 
-            creates imaginative generation.
+          <p>    
+            In this study, we aim to extend the capabilities of <a href="https://github.com/CompVis/stable-diffusion">diffusion-based text-to-image (T2I) generation models</a> 
+            by incorporating diverse modalities beyond textual description, such as sketch, box, color palette, and style embedding, within a single model. 
+            We thus design a multimodal T2I diffusion model, coined as <b>DiffBlender</b>, by separating the channels of conditions into three types, <i>i.e.</i>, image forms, spatial tokens, and non-spatial tokens. 
+            <b>The unique architecture of DiffBlender facilitates adding new input modalities, pioneering a scalable framework for conditional image generation.</b> 
+            Notably, we achieve this without altering the parameters of the existing generative model, Stable Diffusion, only with updating partial components. 
+            Our study establishes new benchmarks in multimodal generation through quantitative and qualitative comparisons with existing conditional generation methods. 
+            We demonstrate that DiffBlender faithfully blends all the provided information and showcase its various applications in the detailed image synthesis.
           </p>
         </div>
       </div>
@@ -482,6 +475,7 @@
           <h2 class="title is-4">Evaluation with baselines</h2>
           <div class="content has-text-justified">
             We set new standards for multimodal generation by conducting quantitative and qualitative comparisons with existing approaches.
+            DiffBlender with multimodal conditions can achieve not only high fidelity but also reliable capability of multi-conditional generation, exhibiting high scores in YOLO, SSIM, and Depth.
           </div>  
 
           <div class="column is-five-fifths">
